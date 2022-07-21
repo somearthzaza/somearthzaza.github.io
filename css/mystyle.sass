@@ -1,0 +1,79 @@
+$primary_black : #000
+$primary_white : #fff
+$font_paragraph : 18px
+$font_header : 40px
+$myFont : work-san-bold
+$fontSansreg: work-san-regular
+$fontSansExLight: work-san-extralight
+
+@font-face 
+    font-family: work-san-bold
+    src: url("/font/TTF/workSans-black.ttf")
+
+@font-face 
+    font-family: work-san-regular
+    src: url("/font/TTF/WorkSans-Regular.ttf")
+
+@font-face 
+    font-family: work-san-extralight
+    src: url("/font/TTF/workSans-ExtraLight.ttf")
+
+
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.main-header
+    background-color: $primary_black
+
+.header-banner
+    position: relative
+    max-width: 100%
+
+.header-banner-text
+    display: inline-block
+    position: absolute
+    top: 400
+    left: 100
+
+.header-banner-text h1
+    font-family: $myFont
+    text-transform: uppercase
+    font-style:normal 
+    line-height: 40px
+    font-size: 96px
+
+.header-banner-text h2
+    width: 100%
+    font-family: $fontSansreg
+    font-size: 96px
+
+.header-banner
+    display: flex
+    flex-direction: row
+
+.header-banner-img
+    display: inline-block
+    position: relative
+    min-width: 100%
+
+.header-banner .header-banner-img img
+    position: absolute
+    transform: scaleX(-1)
+
+.header-banner .header-banner-img
+ 
+
+
+.header-banner-img-back
+    max-height: 800px
+    z-index: -1
+    right: 0
+
+.header-banner-img-front
+    max-height: 800px
+    z-index: 1
+    right: 10
+

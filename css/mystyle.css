@@ -1,0 +1,85 @@
+@font-face {
+  font-family: work-san-bold;
+  src: url("/font/TTF/workSans-black.ttf");
+}
+
+@font-face {
+  font-family: work-san-regular;
+  src: url("/font/TTF/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: work-san-extralight;
+  src: url("/font/TTF/workSans-ExtraLight.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header {
+  background-color: #000;
+}
+
+.header-banner {
+  position: relative;
+  max-width: 100%;
+}
+
+.header-banner-text {
+  display: inline-block;
+  position: absolute;
+  top: 400;
+  left: 100;
+}
+
+.header-banner-text h1 {
+  font-family: work-san-bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 96px;
+}
+
+.header-banner-text h2 {
+  width: 100%;
+  font-family: work-san-regular;
+  font-size: 96px;
+}
+
+.header-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-banner-img {
+  display: inline-block;
+  position: relative;
+  min-width: 100%;
+}
+
+.header-banner .header-banner-img img {
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.header-banner-img-back {
+  max-height: 800px;
+  z-index: -1;
+  right: 0;
+}
+
+.header-banner-img-front {
+  max-height: 800px;
+  z-index: 1;
+  right: 10;
+}
+/*# sourceMappingURL=mystyle.css.map */
