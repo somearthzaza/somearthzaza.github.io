@@ -8,7 +8,7 @@ $fontSansExLight: work-san-extralight
 
 @font-face 
     font-family: work-san-bold
-    src: url("/font/TTF/workSans-black.ttf")
+    src: url("/font/TTF/workSans-bold.ttf")
 
 @font-face 
     font-family: work-san-regular
@@ -29,30 +29,55 @@ $fontSansExLight: work-san-extralight
     background-color: $primary_black
 
 .header-banner
-    position: relative
+    position: static
     max-width: 100%
+    min-height: 850px
 
 .header-banner-text
     display: inline-block
     position: absolute
-    top: 400
-    left: 100
+    top: 400px
+    left: 130px
 
 .header-banner-text h1
-    font-family: $myFont
+    font-weight: 700
+    font-family:  $myFont
     text-transform: uppercase
-    font-style:normal 
-    line-height: 40px
+    letter-spacing: -0.02em
+    line-height: 60px
     font-size: 96px
 
 .header-banner-text h2
+    font-weight: 400
     width: 100%
     font-family: $fontSansreg
     font-size: 96px
 
-.header-banner
-    display: flex
-    flex-direction: row
+.header-banner-text 
+    h1
+        font-weight: 700
+        font-family:  $myFont
+        text-transform: uppercase
+        letter-spacing: -0.02em
+        line-height: 60px
+        font-size: 96px
+    h2
+        font-weight: 400
+        width: 100%
+        font-family: $fontSansreg
+        font-size: 96px
+    p
+        font-size: 48px
+        font-family: $fontSansExLight
+
+        span
+            font-family: $myFont
+        
+
+// .header-banner-text p span
+//     font-family: $myFont
+
+
 
 .header-banner-img
     display: inline-block
@@ -68,12 +93,45 @@ $fontSansExLight: work-san-extralight
 
 
 .header-banner-img-back
-    max-height: 800px
+    max-height: 700px
     z-index: -1
-    right: 0
+    top: 80px
+    right: 80px
 
 .header-banner-img-front
     max-height: 800px
     z-index: 1
-    right: 10
+    right: 150px
+    top: -20px
+
+// section award//
+
+.section-award
+    display: flex
+    flex-direction: row
+    min-height: 600px
+    background-color: $primary_black
+    color: $primary_white
+    
+    .award-left
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            margin-top: 10%
+            font-family: $myFont
+            font-size: 96px
+        p
+            text-align: center
+            margin-top: 10%
+            max-width: 600px
+    .award-right
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+      
+
 
