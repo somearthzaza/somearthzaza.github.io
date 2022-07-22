@@ -1,6 +1,6 @@
 @font-face {
   font-family: work-san-bold;
-  src: url("../font/TTF/workSans-bold.ttf");
+  src: url("../font/TTF/WorkSans-bold.ttf");
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: work-san-extralight;
-  src: url("../font/TTF/workSans-ExtraLight.ttf");
+  src: url("../font/TTF/WorkSans-ExtraLight.ttf");
 }
 
 * {
