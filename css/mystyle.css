@@ -1,6 +1,11 @@
 @font-face {
+<<<<<<< HEAD
   font-family: work-san-bold;
   src: url("../font/TTF/WorkSans-Bold.ttf");
+=======
+  font-family: work-san-Bold;
+  src: url("../font/TTF/WorkSans-bold.ttf");
+>>>>>>> 48457842d4132e7e18af56c0ea98ca414483e599
 }
 
 @font-face {
@@ -213,6 +218,7 @@
   text-align: center;
   padding: 0 10 0 10;
 }
+<<<<<<< HEAD
 
 .tiktok {
   background-color: #000;
@@ -324,3 +330,6 @@
   }
 }
 /*# sourceMappingURL=mystyle.css.map */
+=======
+/*# sourceMappingURL=mystyle.css.map */
+>>>>>>> 48457842d4132e7e18af56c0ea98ca414483e599
