@@ -8,7 +8,7 @@ $fontSansExLight: work-san-extralight
 
 @font-face 
     font-family: work-san-bold
-    src: url("../font/TTF/workSans-bold.ttf")
+    src: url("../font/TTF/WorkSans-Bold.ttf")
 
 @font-face 
     font-family: work-san-regular
@@ -16,7 +16,7 @@ $fontSansExLight: work-san-extralight
 
 @font-face 
     font-family: work-san-extralight
-    src: url("../font/TTF/workSans-ExtraLight.ttf")
+    src: url("../font/TTF/WorkSans-ExtraLight.ttf")
 
 
 
@@ -29,14 +29,14 @@ $fontSansExLight: work-san-extralight
     background-color: $primary_black
 
 .header-banner
-    position: static
+    position: relative
     max-width: 100%
-    min-height: 850px
+    height: 100%
 
 .header-banner-text
-    display: inline-block
+
     position: absolute
-    top: 400px
+    top: 37%
     left: 130px
 
 .header-banner-text h1
@@ -60,14 +60,14 @@ $fontSansExLight: work-san-extralight
         text-transform: uppercase
         letter-spacing: -0.02em
         line-height: 60px
-        font-size: 96px
+        font-size: 5.5vw
     h2
         font-weight: 400
         width: 100%
         font-family: $fontSansreg
-        font-size: 96px
+        font-size: 5.5vw
     p
-        font-size: 48px
+        font-size: 2.5vw
         font-family: $fontSansExLight
 
         span
@@ -80,11 +80,15 @@ $fontSansExLight: work-san-extralight
 
 
 .header-banner-img
-    display: inline-block
     position: relative
-    min-width: 100%
-
+    height: 100%
+   
+.header-banner-box
+    position: relative
+    max-height: 100%
 .header-banner .header-banner-img img
+    
+    top: 20%
     position: absolute
     transform: scaleX(-1)
 
@@ -93,17 +97,17 @@ $fontSansExLight: work-san-extralight
 
 
 .header-banner-img-back
-    max-height: 700px
-    z-index: -1
-    top: 80px
-    right: 80px
+    z-index: 1
+    right: 5%
+    width: 25%
+    max-height: 100%
 
 .header-banner-img-front
-    max-height: 800px
-    z-index: 1
-    right: 150px
-    top: -20px
-
+    width: 42%
+    right: 20%
+    z-index: 2
+    max-width: 100%
+    max-height: 100%
 // section award//
 
 .section-award
@@ -134,7 +138,7 @@ $fontSansExLight: work-san-extralight
         width: 100%
     
 // youtube-section
-.section-youtube
+.section-youtube, .section-tiktok
     margin-top: 50px
     margin-bottom: 50px
     .youtube-header
@@ -146,11 +150,11 @@ $fontSansExLight: work-san-extralight
             width: fit-content
             margin: auto
 
-    .youtube-box
+    .youtube-box ,.tiktok-box
     //    display: flex
     //    flex-direction: column
     overflow: visible
-    .youtube-box-main
+    .youtube-box-main,.tiktok-box-main
         margin: auto
         display: flex
         flex-direction: row
@@ -163,7 +167,8 @@ $fontSansExLight: work-san-extralight
         // max-height: 100%
         column-gap: 50px
         height: auto
-    .youtube-box-vdo 
+    
+    .youtube-box-vdo , .tiktok-box-vdo
         width: 100%
        
     .youtube-box-vdo iframe
@@ -177,3 +182,87 @@ $fontSansExLight: work-san-extralight
         text-align: center
         padding: 0 10 0 10
 
+.tiktok
+    background-color: $primary_black
+    color: $primary_white
+.section-tiktok
+    padding-bottom: 60px
+
+// section myskill
+.section-myskill
+    margin-bottom: 50px
+    .myskill-header
+        width: 80%
+        margin: auto
+        padding: 30px 0px 40px 0px
+        border-bottom: 5px solid black
+        h1
+            margin: auto
+            width: fit-content
+            font-family: $myFont
+            font-size: 96px
+    .myskill-semi-header
+        margin-top: 30px
+        h2
+            margin: auto
+            width: fit-content
+            font-family: $myFont
+            font-size: 5vw
+            font-weight:lighter
+    .myskill-paragraph
+        width: 80%
+        margin: auto
+        margin-top: 50px
+        p   
+            text-align: center
+            
+            width: fit-content
+            font-family: $fontSansreg
+            font-size: 1vw
+            font-weight:lighter
+.section-premiere       
+    background: $primary_black 
+    .premiere-box-main
+        padding: 30px 0
+        margin: auto
+        width: 80%
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        justify-content: center
+        .premiere-box
+            .premiere-box-vdo
+                margin: auto
+                img
+                    max-width: 100%
+                    max-height: 400px
+                max-width: 50%
+                max-height: 100%
+
+
+$mediaphone: 600px
+$mediateblets: 768px
+$medialaptops: 992px
+$largelaptops: 1200px
+$largepc: 1700px
+
+@media only screen and (min-width:$largelaptops)  and (max-width:$largepc)
+    .header-banner
+        height: 80%
+    .header-banner-text
+        top: 40%
+        left: 5%
+    // .header-banner-img-front
+    //     top: -4%
+        
+    // .header-banner-img-back
+    //     top: 8%
+    .header-banner .header-banner-img img
+        min-width: 20%
+    .header-banner-img
+        height: 800px
+    
+@media only screen and(min-width: $medialaptops) and (max-width: $largelaptops)
+    .header-banner
+        height: 60%
+    .tiktok-box
+        display: none
