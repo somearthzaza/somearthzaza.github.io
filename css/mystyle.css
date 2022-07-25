@@ -1,11 +1,6 @@
 @font-face {
-<<<<<<< HEAD
   font-family: work-san-bold;
   src: url("../font/TTF/WorkSans-Bold.ttf");
-=======
-  font-family: work-san-Bold;
-  src: url("../font/TTF/WorkSans-bold.ttf");
->>>>>>> 48457842d4132e7e18af56c0ea98ca414483e599
 }
 
 @font-face {
@@ -93,7 +88,7 @@
 }
 
 .header-banner .header-banner-img img {
-  top: 20%;
+  top: 13%;
   position: absolute;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
@@ -115,6 +110,15 @@
 }
 
 .section-award {
+  background-color: #000;
+}
+
+.section-award .row-award {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,13 +126,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
   min-height: 600px;
-  background-color: #000;
   color: #fff;
 }
 
 .section-award .award-left {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +169,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  max-width: 100%;
+}
+
+.section-award .award-right .award-box {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-award .award-right .award-box img {
+  max-width: 100%;
 }
 
 .section-youtube, .section-tiktok {
@@ -218,7 +232,6 @@
   text-align: center;
   padding: 0 10 0 10;
 }
-<<<<<<< HEAD
 
 .tiktok {
   background-color: #000;
@@ -322,14 +335,89 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-banner .header-banner-img img {
+    top: 14%;
+  }
   .header-banner {
     height: 60%;
   }
   .tiktok-box {
     display: none;
   }
+  .youtube-box-main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    row-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header-banner-text {
+    left: 10%;
+    top: 25%;
+  }
+  .header-banner .header-banner-img img {
+    top: 2%;
+  }
+  .header-banner {
+    height: 45%;
+  }
+  .tiktok-box {
+    display: none;
+  }
+  .youtube-box-main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    row-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header-banner {
+    height: 40%;
+  }
+  .tiktok-box {
+    display: none;
+  }
+  .youtube-box-main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .header-banner-text {
+    top: 35%;
+    left: 10%;
+  }
+  .header-banner-text h1 {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-banner {
+    height: 30%;
+  }
+  .tiktok-box {
+    display: none;
+  }
+  .youtube-box-main {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    row-gap: 20px;
+  }
+  .header-banner-text {
+    top: 36%;
+    left: 6%;
+  }
+  .header-banner-text h1 {
+    line-height: 30px;
+  }
 }
 /*# sourceMappingURL=mystyle.css.map */
-=======
-/*# sourceMappingURL=mystyle.css.map */
->>>>>>> 48457842d4132e7e18af56c0ea98ca414483e599

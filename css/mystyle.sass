@@ -88,7 +88,7 @@ $fontSansExLight: work-san-extralight
     max-height: 100%
 .header-banner .header-banner-img img
     
-    top: 20%
+    top: 13%
     position: absolute
     transform: scaleX(-1)
 
@@ -111,14 +111,20 @@ $fontSansExLight: work-san-extralight
 // section award//
 
 .section-award
-    display: flex
-    flex-direction: row
-    min-height: 600px
     background-color: $primary_black
-    color: $primary_white
+    .row-award
+        justify-content: center
+        margin: auto
+        width: 80%
+        display: flex
+        flex-direction: row
+        column-gap: 4rem;
+        min-height: 600px
+        columns-
+        color: $primary_white
     
     .award-left
-        width: 100%
+        max-width: 100%
         height: 100%
         display: flex
         flex-direction: column
@@ -135,7 +141,12 @@ $fontSansExLight: work-san-extralight
         display: flex
         align-items: center
         justify-content: center
-        width: 100%
+        max-width: 100%
+        .award-box
+            max-width: 100%
+            max-height: 100%
+            img
+                max-width: 100%
     
 // youtube-section
 .section-youtube, .section-tiktok
@@ -261,8 +272,52 @@ $largepc: 1700px
     .header-banner-img
         height: 800px
     
+    
 @media only screen and(min-width: $medialaptops) and (max-width: $largelaptops)
+    .header-banner .header-banner-img img
+        top: 14%
     .header-banner
         height: 60%
     .tiktok-box
         display: none
+    .youtube-box-main
+        flex-direction: column !important
+        row-gap: 20px
+@media only screen and(min-width: $mediateblets) and (max-width: $medialaptops)
+    .header-banner-text
+        left: 10%
+        top: 25%
+    .header-banner .header-banner-img img
+        top: 2%
+    .header-banner
+        height: 45%
+    .tiktok-box
+        display: none
+    .youtube-box-main
+        flex-direction: column !important
+        row-gap: 20px
+@media only screen and(min-width: $mediaphone) and (max-width: $mediateblets)
+    .header-banner
+        height: 40%
+    .tiktok-box
+        display: none
+    .youtube-box-main
+        flex-direction: column !important
+    .header-banner-text
+        top: 35%
+        left: 10%
+    .header-banner-text h1
+        line-height: 30px
+@media only screen and(max-width: $mediaphone)
+    .header-banner
+        height: 30%
+    .tiktok-box
+        display: none
+    .youtube-box-main
+        flex-direction: column !important
+        row-gap: 20px
+    .header-banner-text
+        top: 36%
+        left: 6%
+    .header-banner-text h1
+        line-height: 30px

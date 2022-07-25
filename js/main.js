@@ -1,1 +1,1 @@
-window.read
+document.red
