@@ -422,6 +422,36 @@
   .header-banner-text h1 {
     line-height: 30px;
   }
+  .header-banner-text h1 {
+    line-height: 20px;
+  }
+  .section-award {
+    padding: 10px 0;
+  }
+  .section-award .award-left p {
+    font-size: 2vw;
+  }
+  .section-award .award-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-award .row-award {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .section-youtube .youtube-box-p {
+    font-size: 3vw;
+  }
+  .section-myskill .myskill-header h1 {
+    font-size: 9vw;
+  }
 }
 
 @media only screen and (max-width: 320px) {
