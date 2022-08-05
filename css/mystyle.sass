@@ -132,7 +132,7 @@ $fontSansExLight: work-san-extralight
         h1
             margin-top: 10%
             font-family: $myFont
-            font-size: 96px
+            font-size: 5.5vw
         p
             text-align: center
             margin-top: 10%
@@ -157,7 +157,7 @@ $fontSansExLight: work-san-extralight
         
         h1
             font-family: $myFont
-            font-size: 96px
+            font-size: 5.5vw
             width: fit-content
             margin: auto
 
@@ -249,7 +249,8 @@ $fontSansExLight: work-san-extralight
                 max-width: 50%
                 max-height: 100%
 
-
+$mediaSmallMoblie: 320px
+$mediamoblie: 480px
 $mediaphone: 600px
 $mediateblets: 768px
 $medialaptops: 992px
@@ -309,8 +310,25 @@ $largepc: 1700px
     .header-banner-text h1
         line-height: 30px
 @media only screen and(max-width: $mediaphone)
+    .header-banner .header-banner-img img
+        top: 40px
     .header-banner
         height: 30%
+    .tiktok-box
+        display: none
+    .youtube-box-main
+        flex-direction: column !important
+        row-gap: 20px
+    .header-banner-text
+        top: 30%
+        left: 6%
+    .header-banner-text h1
+        line-height: 30px
+@media only screen and(max-width: $mediaSmallMoblie)
+    .header-banner .header-banner-img img
+        top: 40px
+    .header-banner
+        height: 20%
     .tiktok-box
         display: none
     .youtube-box-main
@@ -320,4 +338,19 @@ $largepc: 1700px
         top: 36%
         left: 6%
     .header-banner-text h1
-        line-height: 30px
+        line-height: 20px
+    .section-award
+        padding: 10px 0
+    .section-award .award-left p
+        font-size: 2vw
+    .section-award .award-left
+        align-items: center
+    .section-award .row-award
+        margin:  
+        min-height: fit-content
+        align-items: center
+        column-gap: 1rem 
+    .section-youtube .youtube-box-p
+        font-size: 3vw
+    .section-myskill .myskill-header h1
+        font-size: 9vw
