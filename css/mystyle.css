@@ -318,12 +318,22 @@
   max-height: 400px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section-premiere .premiere-box-main {
+    width: 90%;
+    padding: 10px 0;
+  }
+  .section-myskill .myskill-paragraph p {
+    font-size: 2vw;
+  }
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1700px) {
   .header-banner {
-    height: 80%;
+    height: 100%;
   }
   .header-banner-text {
-    top: 33%;
+    top: 40%;
     left: 5%;
   }
   .header-banner .header-banner-img img {
@@ -332,14 +342,21 @@
   .header-banner-img {
     height: 800px;
   }
+  .section-premiere .premiere-box-main {
+    width: 90%;
+    padding: 10px 0;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-banner .header-banner-img img {
-    top: 14%;
+    top: 13%;
   }
   .header-banner {
-    height: 60%;
+    height: 80%;
+  }
+  .header-banner-text {
+    left: 5%;
   }
   .tiktok-box {
     display: none;
@@ -355,14 +372,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .header-banner-text {
-    left: 10%;
-    top: 38%;
+    left: 5%;
+    top: 40%;
   }
   .header-banner .header-banner-img img {
     top: 9%;
   }
   .header-banner {
-    height: 50%;
+    height: 70%;
   }
   .tiktok-box {
     display: none;
@@ -408,7 +425,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .header-banner {
-    height: 45%;
+    height: 70%;
   }
   .tiktok-box {
     display: none;
@@ -420,8 +437,8 @@
             flex-direction: column !important;
   }
   .header-banner-text {
-    top: 36%;
-    left: 10%;
+    top: 38%;
+    left: 5%;
   }
   .header-banner-text h1 {
     line-height: 30px;
@@ -463,7 +480,7 @@
     top: 40px;
   }
   .header-banner {
-    height: 35%;
+    height: 50%;
   }
   .tiktok-box {
     display: none;
@@ -476,7 +493,7 @@
     row-gap: 20px;
   }
   .header-banner-text {
-    top: 28%;
+    top: 30%;
     left: 6%;
   }
   .header-banner-text h1 {
@@ -519,7 +536,7 @@
     top: 40px;
   }
   .header-banner {
-    height: 20%;
+    height: 35%;
   }
   .tiktok-box {
     display: none;
@@ -532,7 +549,7 @@
     row-gap: 20px;
   }
   .header-banner-text {
-    top: 36%;
+    top: 32%;
     left: 6%;
   }
   .header-banner-text h1 {

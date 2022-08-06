@@ -257,11 +257,17 @@ $medialaptops: 992px
 $largelaptops: 1200px
 $largepc: 1700px
 
+@media only screen and (max-width:$largelaptops)
+    .section-premiere .premiere-box-main
+        width: 90%
+        padding: 10px 0
+    .section-myskill .myskill-paragraph p
+        font-size: 2vw
 @media only screen and (min-width:$largelaptops)  and (max-width:$largepc)
     .header-banner
-        height: 80%
+        height: 100%
     .header-banner-text
-        top: 33%
+        top: 40%
         left: 5%
     // .header-banner-img-front
     //     top: -4%
@@ -272,13 +278,17 @@ $largepc: 1700px
         min-width: 20%
     .header-banner-img
         height: 800px
-    
+    .section-premiere .premiere-box-main
+        width: 90%
+        padding: 10px 0
     
 @media only screen and(min-width: $medialaptops) and (max-width: $largelaptops)
     .header-banner .header-banner-img img
-        top: 14%
+        top: 13%
     .header-banner
-        height: 60%
+        height: 80%
+    .header-banner-text
+        left: 5%
     .tiktok-box
         display: none
     .youtube-box-main
@@ -286,12 +296,12 @@ $largepc: 1700px
         row-gap: 20px
 @media only screen and(min-width: $mediateblets) and (max-width: $medialaptops)
     .header-banner-text
-        left: 10%
-        top: 38%
+        left: 5%
+        top: 40%
     .header-banner .header-banner-img img
         top: 9%
     .header-banner
-        height: 50%
+        height: 70%
     .tiktok-box
         display: none
     .youtube-box-main
@@ -316,14 +326,14 @@ $largepc: 1700px
         font-size: 9vw
 @media only screen and(min-width: $mediaphone) and (max-width: $mediateblets)
     .header-banner
-        height: 45%
+        height: 70%
     .tiktok-box
         display: none
     .youtube-box-main
         flex-direction: column !important
     .header-banner-text
-        top: 36%
-        left: 10%
+        top: 38%
+        left: 5%
     .header-banner-text h1
         line-height: 30px
     .header-banner-text h1
@@ -347,14 +357,14 @@ $largepc: 1700px
     .header-banner .header-banner-img img
         top: 40px
     .header-banner
-        height: 35%
+        height: 50%
     .tiktok-box
         display: none
     .youtube-box-main
         flex-direction: column !important
         row-gap: 20px
     .header-banner-text
-        top: 28%
+        top: 30%
         left: 6%
     .header-banner-text h1
         line-height: 30px
@@ -379,14 +389,14 @@ $largepc: 1700px
     .header-banner .header-banner-img img
         top: 40px
     .header-banner
-        height: 20%
+        height: 35%
     .tiktok-box
         display: none
     .youtube-box-main
         flex-direction: column !important
         row-gap: 20px
     .header-banner-text
-        top: 36%
+        top: 32%
         left: 6%
     .header-banner-text h1
         line-height: 20px
