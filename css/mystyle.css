@@ -380,7 +380,7 @@
     top: 9%;
   }
   .header-banner {
-    height: 50%;
+    height: 100%;
   }
   .tiktok-box {
     display: none;
@@ -426,7 +426,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .header-banner {
-    height: 45%;
+    height: 100%;
   }
   .tiktok-box {
     display: none;
@@ -481,7 +481,7 @@
     top: 40px;
   }
   .header-banner {
-    height: 35%;
+    height: 100%;
   }
   .tiktok-box {
     display: none;
@@ -537,7 +537,7 @@
     top: 40px;
   }
   .header-banner {
-    height: 30%;
+    height: 100%;
   }
   .tiktok-box {
     display: none;
