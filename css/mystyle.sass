@@ -229,24 +229,25 @@ $fontSansExLight: work-san-extralight
             
             width: fit-content
             font-family: $fontSansreg
-            font-size: 1vw
+            font-size: 1.5vw
             font-weight:lighter
 .section-premiere       
     background: $primary_black 
     .premiere-box-main
         padding: 30px 0
         margin: auto
-        width: 80%
+        width: 90%
         display: grid
         grid-template-columns: repeat(3,1fr)
         justify-content: center
+        column-gap: 20px 
         .premiere-box
             .premiere-box-vdo
                 margin: auto
                 img
                     max-width: 100%
                     max-height: 400px
-                max-width: 50%
+                max-width: 100%
                 max-height: 100%
 
 $mediaSmallMoblie: 320px
@@ -259,17 +260,18 @@ $largepc: 1700px
 
 @media only screen and (min-width:$largelaptops)  and (max-width:$largepc)
     .header-banner
-        height: 80%
+        height: 100%
     .header-banner-text
         top: 33%
         left: 5%
-    // .header-banner-img-front
-    //     top: -4%
-        
-    // .header-banner-img-back
-    //     top: 8%
-    .header-banner .header-banner-img img
-        min-width: 20%
+    .header-banner-img-front
+       min-width: 615px
+       top: 13% !important
+    
+    .header-banner-img-back
+        min-width: 365px
+    // .header-banner .header-banner-img img
+    //     min-width: 400px
     .header-banner-img
         height: 800px
     
@@ -277,13 +279,24 @@ $largepc: 1700px
 @media only screen and(min-width: $medialaptops) and (max-width: $largelaptops)
     .header-banner .header-banner-img img
         top: 14%
+        
     .header-banner
-        height: 60%
+        height: 100%
     .tiktok-box
         display: none
     .youtube-box-main
         flex-direction: column !important
         row-gap: 20px
+    .header-banner-img-front
+       min-width: 615px
+       top: 14% !important
+        right: 5%
+    .header-banner-img-back
+        min-width: 365px
+        right: 2%
+    .header-banner-text
+        left: 35px
+    
 @media only screen and(min-width: $mediateblets) and (max-width: $medialaptops)
     .header-banner-text
         left: 10%
@@ -354,7 +367,7 @@ $largepc: 1700px
         flex-direction: column !important
         row-gap: 20px
     .header-banner-text
-        top: 28%
+        top: 30%
         left: 6%
     .header-banner-text h1
         line-height: 30px
@@ -379,14 +392,14 @@ $largepc: 1700px
     .header-banner .header-banner-img img
         top: 40px
     .header-banner
-        height: 20%
+        height: 40%
     .tiktok-box
         display: none
     .youtube-box-main
         flex-direction: column !important
         row-gap: 20px
     .header-banner-text
-        top: 36%
+        top: 20%
         left: 6%
     .header-banner-text h1
         line-height: 20px

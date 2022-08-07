@@ -287,7 +287,7 @@
   width: -moz-fit-content;
   width: fit-content;
   font-family: work-san-regular;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .section-premiere {
@@ -297,7 +297,7 @@
 .section-premiere .premiere-box-main {
   padding: 30px 0;
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -305,11 +305,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .section-premiere .premiere-box-main .premiere-box .premiere-box-vdo {
   margin: auto;
-  max-width: 50%;
+  max-width: 100%;
   max-height: 100%;
 }
 
@@ -320,14 +322,18 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1700px) {
   .header-banner {
-    height: 80%;
+    height: 100%;
   }
   .header-banner-text {
     top: 33%;
     left: 5%;
   }
-  .header-banner .header-banner-img img {
-    min-width: 20%;
+  .header-banner-img-front {
+    min-width: 615px;
+    top: 13% !important;
+  }
+  .header-banner-img-back {
+    min-width: 365px;
   }
   .header-banner-img {
     height: 800px;
@@ -339,7 +345,7 @@
     top: 14%;
   }
   .header-banner {
-    height: 60%;
+    height: 100%;
   }
   .tiktok-box {
     display: none;
@@ -350,6 +356,18 @@
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     row-gap: 20px;
+  }
+  .header-banner-img-front {
+    min-width: 615px;
+    top: 14% !important;
+    top-right: 5%;
+  }
+  .header-banner-img-back {
+    min-width: 365px;
+    right: 2%;
+  }
+  .header-banner-text {
+    left: 35px;
   }
 }
 
@@ -476,7 +494,7 @@
     row-gap: 20px;
   }
   .header-banner-text {
-    top: 28%;
+    top: 30%;
     left: 6%;
   }
   .header-banner-text h1 {
@@ -519,7 +537,7 @@
     top: 40px;
   }
   .header-banner {
-    height: 20%;
+    height: 40%;
   }
   .tiktok-box {
     display: none;
@@ -532,7 +550,7 @@
     row-gap: 20px;
   }
   .header-banner-text {
-    top: 36%;
+    top: 20%;
     left: 6%;
   }
   .header-banner-text h1 {
