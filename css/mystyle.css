@@ -235,7 +235,8 @@ span {
   margin-top: 20px;
 }
 .right-selector:hover,
-.right-selector:active .left-selector:hover,
+.right-selector:active,
+.left-selector:hover,
 .left-selector:active {
   box-shadow: 5px 5px 5px 5px rgb(33 33 33 / 20%);
 }
@@ -482,6 +483,7 @@ span {
   width: 80%;
   margin: auto;
 }
+
 .main-blog-inside {
 }
 .blog-inside-img img {
@@ -628,6 +630,16 @@ span {
   border-radius: 10px;
   width: 70px;
   background-color: #f9a746;
+}
+.reply textarea {
+  align-self: flex-end;
+  width: 70% !important;
+}
+.comment-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
 }
 /*-----------------------------proflie-----------------------------*/
 
