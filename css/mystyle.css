@@ -631,8 +631,7 @@ span {
   width: 70px;
   background-color: #f9a746;
 }
-.reply textarea {
-  align-self: flex-end;
+.reply {
   width: 70% !important;
 }
 .comment-row {
