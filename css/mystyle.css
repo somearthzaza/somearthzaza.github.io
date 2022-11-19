@@ -165,6 +165,8 @@ span {
 }
 /*header*/
 .head-nav {
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
   margin-top: 20px;
   margin-right: 20px;
@@ -639,6 +641,20 @@ span {
   flex-direction: column;
   justify-content: right;
   align-items: flex-end;
+}
+.btn-offer button {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-size: 1vmax;
+  font-weight: bold;
+}
+.btn-offer {
+  width: 7%;
 }
 /*-----------------------------proflie-----------------------------*/
 
