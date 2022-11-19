@@ -235,7 +235,8 @@ span {
   margin-top: 20px;
 }
 .right-selector:hover,
-.left-selector:hover {
+.right-selector:active .left-selector:hover,
+.left-selector:active {
   box-shadow: 5px 5px 5px 5px rgb(33 33 33 / 20%);
 }
 .left-selector h2 {
